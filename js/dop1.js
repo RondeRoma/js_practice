@@ -163,16 +163,16 @@ pizza.setStuff(STUFFING.CHEESE);
 pizza.setStuff(STUFFING.CHEESE);
 pizza.setStuff(STUFFING.BEACON);
 pizza.setStuff(STUFFING.TOMATO);
-pizza.setSauces(SAUCES.KETCHUP);
-pizza.setSauces(SAUCES.KETCHUP);
+// pizza.setSauces(SAUCES.KETCHUP);
+// pizza.setSauces(SAUCES.KETCHUP);
 
-pizza.delStuff(STUFFING.CHEESE);
-pizza.delStuff(STUFFING.TOMATO);
+// pizza.delStuff(STUFFING.CHEESE);
+// pizza.delStuff(STUFFING.TOMATO);
 
-pizza.delSauces(STUFFING.KETCHUP);
-pizza.delSauces(STUFFING.MUSTARD);
+// pizza.delSauces(STUFFING.KETCHUP);
+// pizza.delSauces(STUFFING.MUSTARD);
 
-pizza.getCost(4);
+// pizza.getCost(4);
 
 
 
