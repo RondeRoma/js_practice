@@ -1,13 +1,13 @@
 //3 module, 15/41
 function countTotalSalary(salaries) {
-    let totalSalary = 0;
+  let totalSalary = 0;
   const values = Object.values(salaries);
   for (const value of values) {
-     totalSalary +=value;
+    totalSalary += value;
   }
-    return totalSalary;
-  }
-  countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 })
+  return totalSalary;
+}
+countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 });
 
 //3 module, 17/41
 const colors = [
@@ -28,20 +28,43 @@ for (const color of colors) {
 // console.log(rgbColors);
 
 //3 module, 18/41
+// const products = [
+//     { name: 'Радар', price: 1300, quantity: 4 },
+//     { name: 'Сканер', price: 2700, quantity: 3 },
+//     { name: 'Дроид', price: 400, quantity: 7 },
+//     { name: 'Захват', price: 1200, quantity: 9 },
+//   ];
+
+//   function getProductPrice(productName) {
+//     // Пиши код ниже этой строки
+//     let productPrice = null;
+//     const values = Object.values(productName);
+//     for (const value of values) {
+//         productPrice = value;
+//     // Пиши код выше этой строки
+//   }
+// }
+//   getProductPrice('Радар');
+
 const products = [
-    { name: 'Радар', price: 1300, quantity: 4 },
-    { name: 'Сканер', price: 2700, quantity: 3 },
-    { name: 'Дроид', price: 400, quantity: 7 },
-    { name: 'Захват', price: 1200, quantity: 9 },
-  ];
-  
-  function getProductPrice(productName) {
-    // Пиши код ниже этой строки
-    let productPrice = null;
-    const values = Object.values(productName);
-    for (const value of values) {
-        productPrice = value;
-    // Пиши код выше этой строки
+  { name: 'Радар', price: 1300, quantity: 4 },
+  { name: 'Сканер', price: 2700, quantity: 3 },
+  { name: 'Дроид', price: 400, quantity: 7 },
+  { name: 'Захват', price: 1200, quantity: 9 },
+];
+
+function getAllPropValues(propName) {
+//const value = Object.values(products);
+const key = Object.keys(products[0]);
+let arr = [];
+
+  for (const key of products) {
+    for (const el in key) {
+      if (el === propName) {
+        arr.push(key[test]);
+      }
+    }
   }
+return arr;
 }
-  getProductPrice('Радар');
+
